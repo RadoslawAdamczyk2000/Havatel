@@ -1,6 +1,22 @@
 <div>
   <nav>
-    asd
+    <menu>
+      <li>
+        <a href="#">
+          Users
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Posts
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          Todos
+        </a>
+      </li>
+    </menu>
   </nav>
   <main>
     <!-- Widok z użytkownikami -->
@@ -32,9 +48,12 @@
         </ul>
       </div>
     </div>
+
+
+
     <!-- post  w liscie-->
     <a href="#"> <!-- TODO: dynamiczny link do strony z komentarzami -->
-      <div>
+      <article>
         <div>
           <strong>
             Jan Kowalski <!-- TODO: dynamiczna nazwa autora, user_id === id z api użytkowników -->
@@ -50,9 +69,65 @@
             Cernuus barba qui. Canonicus iure voluptates. Bis tibi quam. Molestiae enim solutio. Soluta aiunt amplexus. Laborum qui cupio. Assentator eaque asc...
           </p>
         </div>
-      </div>
+      </article>
     </a>
-      
+
+      <!-- widok postu, który ma przenosić do innej części aplikacji  -->
+      <div>
+        <div>
+          <a href="#">
+            <button>
+              X
+            </button>
+          </a>
+        </div>
+        <div>
+          <h2>
+            Jan kowalski
+          </h2>
+          <p>
+            Cernuus barba qui. Canonicus iure voluptates. Bis tibi quam. Molestiae enim solutio. Soluta aiunt amplexus. Laborum qui cupio. Assentator eaque ascisco. Eaque rem maiores. Vere vilis vel. Ipsa id defetiscor. Et tripudio comedo. Ut balbus considero. Traho eaque defigo. Repudiandae suasoria defluo. Solitudo censura cur. Dolores ulterius aliqua. Qui patrocinor speculum. Sint vado delectatio. Delinquo vitium vergo
+          </p>
+        </div>
+        <div>
+          <ul>
+            <li>
+              <b>Name:</b>
+              <p></p>
+            </li>
+            <li>
+              <b>E-mail: </b>
+              <p></p>
+            </li>
+            <li>
+              <p>
+                Dignissimos quidem harum. Exercitationem molestias aut. Corrupti commodi aspernatur.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Zadania, Todos -->
+
+      <ul>
+        <li style="background-color:blue;color:white">
+          <article>
+            <small>17<sup>30</sup> 19/01/2025</small>
+            <p>
+              Templum sufficio creber dapifer in cursus vir
+            </p>
+          </article>
+        </li>
+        <li style="background-color:green;color:white">
+          <article>
+            <small>17<sup>30</sup> 19/01/2025</small>
+            <p>
+              Templum sufficio creber dapifer in cursus vir
+            </p>
+          </article>
+        </li>
+      </ul>
 
   </main>
 </div>
