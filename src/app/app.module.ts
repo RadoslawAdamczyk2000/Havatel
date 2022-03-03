@@ -7,6 +7,11 @@ import { NavItemComponent } from './components/atoms/nav-item/nav-item.component
 import { UserItemComponent } from './components/atoms/user-item/user-item.component';
 import { TodoItemComponent } from './components/atoms/todo-item/todo-item.component';
 import { PostItemComponent } from './components/atoms/post-item/post-item.component';
+import { ContentPostComponent } from './components/atoms/content-post/content-post.component';
+import { CommentPostComponent } from './components/atoms/comment-post/comment-post.component';
+import { PostComponent } from './components/bacterias/post/post.component';
+import { UsersComponent } from './components/bacterias/users/users.component';
+import { NavigationComponent } from './components/bacterias/navigation/navigation.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +19,12 @@ import { PostItemComponent } from './components/atoms/post-item/post-item.compon
     NavItemComponent,
     UserItemComponent,
     TodoItemComponent,
-    PostItemComponent
+    PostItemComponent,
+    ContentPostComponent,
+    CommentPostComponent,
+    PostComponent,
+    UsersComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,

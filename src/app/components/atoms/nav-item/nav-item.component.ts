@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-item.component.scss']
 })
 export class NavItemComponent implements OnInit {
-
+  name='Todos'
+  path='#'
   constructor() { }
 
   ngOnInit(): void {
