@@ -12,6 +12,8 @@ import { CommentPostComponent } from './components/atoms/comment-post/comment-po
 import { PostComponent } from './components/bacterias/post/post.component';
 import { UsersComponent } from './components/bacterias/users/users.component';
 import { NavigationComponent } from './components/bacterias/navigation/navigation.component';
+import { PostsComponent } from './components/bacterias/posts/posts.component';
+import { TodosComponent } from './components/bacterias/todos/todos.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { NavigationComponent } from './components/bacterias/navigation/navigatio
     CommentPostComponent,
     PostComponent,
     UsersComponent,
-    NavigationComponent
+    NavigationComponent,
+    PostsComponent,
+    TodosComponent
   ],
   imports: [
     BrowserModule,
