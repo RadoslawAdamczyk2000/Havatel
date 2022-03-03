@@ -1,0 +1,31 @@
+@import '../../../../assets/styles/__variables.scss';
+@import '../../../../assets/styles/__mixins.scss';
+a{
+    & > article{
+        border-radius:1rem;
+        max-width:85vw;
+        min-height:15rem;
+        padding:.25rem;
+        transition:.12s linear box-shadow;
+        width:85rem;
+        & > .head{
+            border-bottom:.25rem solid $black;
+            & > strong {
+                font-size:2.3rem;
+                padding-left:3rem;
+            }
+            & > p{
+                font-size:1.8rem;
+                text-align:center;
+            }
+        }
+        & > .content{
+            padding:.75rem 1.1rem;
+            font-size:1.65rem;
+            text-align:start;
+        }
+        &:hover{
+            box-shadow:0 0 1.45rem .5rem hsla(0,100%,0%,.25);
+        }
+    }
+}
