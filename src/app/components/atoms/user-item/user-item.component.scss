@@ -1,0 +1,51 @@
+@import '../../../../assets/styles/__variables.scss';
+@import '../../../../assets/styles/__mixins.scss';
+.user{
+    @include flexCenter(column,nowrap);
+    background-color:$white;
+    padding:1.2rem .5rem;
+    row-gap:1.25rem;
+    width:35rem;
+    & > .head{
+        align-items:center;
+        display:flex;
+        justify-content:center;
+        height:10rem;
+        & > figure{
+            background-color:$men;
+            border-radius:50%;
+            height:10rem;
+            width:10rem;
+            & > img{
+                height:100%;
+                object-fit:contain;
+                object-position:center;
+                width:100%;
+            }
+        }
+    }
+    & > .content{
+        width:100%;
+        & > ul{
+            @include flexCenter(column,nowrap);
+            row-gap:.25rem;
+            & > li{
+                @include flexCenter(row,wrap);
+                column-gap:1rem;
+                min-height:3rem;
+                width:100%;
+
+                & > p > a{
+                    transition:.12s linear color;
+                    :hover{
+                        color:$special;
+                    }
+                }
+                &:last-of-type > p{
+                    color:green;
+                    font-weight:900;
+                }
+            }
+        }
+    }
+}

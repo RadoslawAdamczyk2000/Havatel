@@ -1,0 +1,23 @@
+@import '../../../../assets/styles/__variables.scss';
+@import '../../../../assets/styles/__mixins.scss';
+li{
+    font-size:2rem;
+    position:relative;
+    text-transform:uppercase;
+    transition:.12s linear color;
+    &::before{
+        background-color:$special;
+        bottom:-.25rem;
+        height:.5rem;
+        left:0;
+        transform:skewX(-45deg);
+        transition:.12s linear width;
+        width:0;
+    }
+    &:hover{
+        color:$special;
+        &::before{
+            width:100%;
+        }
+    }
+}

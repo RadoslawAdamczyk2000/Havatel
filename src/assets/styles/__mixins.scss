@@ -1,0 +1,16 @@
+@mixin flexCenter($direction,$wrap){
+    align-items:center;
+    display:flex;
+    flex-direction:$direction;
+    flex-wrap:$wrap;
+    justify-content:center;
+}
+@mixin flexGrid($columnGap,$rowGap){
+    align-items:center;
+    column-gap:$columnGap;
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    justify-content:center;
+    row-gap:$rowGap;
+}
