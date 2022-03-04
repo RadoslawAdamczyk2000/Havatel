@@ -1,14 +1,21 @@
 <li>
   <div>
-    <button>
-      <i class="fa-solid fa-check"></i>
-    </button>
-    <button>
-      <i class="fa-solid fa-xmark"></i>
-    </button>
-  </div>
-  <small>{{time}}</small>
+    <button
+    title="It's done!"
+    >
+    <i class="fa-solid fa-check"></i>
+  </button>
+  <button
+  title="Delete task."
+  >
+  <i class="fa-solid fa-xmark"></i>
+</button>
+</div>
+  <small>{{todo.time | date:'hh:mm dd/MM/yyyy'}}</small>
   <p>
-    Templum sufficio creber dapifer in cursus vir
+    {{todo.author}}
+  </p>
+  <p>
+    {{todo.title}}
   </p>
 </li>

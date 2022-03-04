@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './user-item.component.html',
   styleUrls: ['./user-item.component.scss']
 })
+
 export class UserItemComponent implements OnInit {
-  image = '../../../../assets/images/male.png';
-  name = 'Radosław Adamczyk'
-  email='radoslaw.adamczyk2000@gmail.com'
-  status = 'active'
+  user = {
+    email : 'radoslaw.adamczyk2000@gmail.com',
+    image : '../../../../assets/images/male.png',
+    name : 'Radosław Adamczyk',
+    status : 'active'
+  }
   constructor() { }
 
   ngOnInit(): void {

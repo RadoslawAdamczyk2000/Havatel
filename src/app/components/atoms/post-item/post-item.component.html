@@ -2,15 +2,15 @@
     <article>
       <div class='head'>
         <p>
-          {{name}} <!-- TODO: dynamiczna nazwa autora, user_id === id z api użytkowników -->
+          {{post.author}} <!-- TODO: dynamiczna nazwa autora, user_id === id z api użytkowników -->
         </p>
         <strong> <!-- TODO: dynamiczny tytuł postu -->
-          {{title}}
+          {{post.title}}
         </strong>
       </div>
       <div class='content'>
         <p> <!-- TODO: dynamiczny excerpt postu, max 147 znaków -->
-          {{content}}
+          {{post.excerpt | slice: 0 : 127}}...
         </p>
       </div>
     </article>

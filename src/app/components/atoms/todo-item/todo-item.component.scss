@@ -8,11 +8,14 @@ li{
     border-bottom-right-radius:3rem;
     border-top-left-radius:3rem;
     color:$white;
-    height:18rem;
+    height:25rem;
+    justify-content:space-evenly;
     margin:1rem 0;
+    padding:1rem 0;
     row-gap:1.5rem;
     transition:.12s linear filter;
     user-select:none;
+    -webkit-user-select:none;
     width:35rem;
     &:hover{
         filter:brightness(115%);

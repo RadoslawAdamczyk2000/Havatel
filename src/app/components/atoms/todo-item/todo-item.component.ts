@@ -16,6 +16,12 @@ const date = `${hour}:${minute} ${day}/${month}/${year}`;
   styleUrls: ['./todo-item.component.scss']
 })
 export class TodoItemComponent implements OnInit {
+  todo = {
+    author: 'Jan Kowalski',
+    time: new Date('2022-03-10T00:00:00.000+05:30'),
+    title : 'Iusto temporibus error arcesso vir ager.',
+    status : 'completed'
+  }
   time = date;
 
   constructor() { }

@@ -1,7 +1,7 @@
 <div class='user'>
     <div class='head'>
       <figure>
-        <img src='{{image}}' alt='{{name}} - zdjęcie'/>
+        <img src='{{user.image}}' alt='{{user.name}} - zdjęcie'/>
         <!-- TODO: jeśli to kobieta to female.png i tło różowe, jeśli mężczyzna to male.png i niebieskie tło -->
       </figure>
     </div>
@@ -10,20 +10,20 @@
         <li>
           <b>Name: </b>
           <p>
-            {{name}} <!-- TODO: dynamiczna nazwa użytkownika -->
+            {{user.name}} <!-- TODO: dynamiczna nazwa użytkownika -->
           </p>
         </li>
         <li>
           <b>E-mail: </b>
           <p>
-            <a href="mailto:{{email}}">
-              {{email}} <!-- TODO: dynamiczny adres e-mail który będzie przekazywany w propsie do hrefa -->
+            <a href="mailto:{{user.email}}">
+              {{user.email}} <!-- TODO: dynamiczny adres e-mail który będzie przekazywany w propsie do hrefa -->
             </a>
           </p>
         </li>
         <li>
           <b>Status: </b> 
-          <p>{{status}}</p> <!-- TODO: dynamiczny status, jeśli aktywny tekst będzie zielony, jeśli nie to czerwony, może być kółko albo tekst  -->
+          <p id='status'>{{user.status}}</p> <!-- TODO: dynamiczny status, jeśli aktywny tekst będzie zielony, jeśli nie to czerwony, może być kółko albo tekst  -->
         </li>
       </ul>
     </div>
